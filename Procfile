@@ -1,0 +1,1 @@
+Delete-Events: python3 bot.py

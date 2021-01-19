@@ -1,0 +1,56 @@
+from vars import var
+from pyrogram import  Client,filters
+from pyrogram.types import (
+    InlineKeyboardMarkup,
+    InlineKeyboardButton
+    )
+
+import logging
+logging.basicConfig(level=logging.WARNING)
+
+Delevents = Client('Delete Events Bot',
+                   api_id=var.API_ID,
+                   api_hash=var.API_HASH,
+                   bot_token=var.BOT_TOKEN
+                   )
+
+@Delevents.on_message(filters.service & filters.group)
+async def main(client , message):
+    bot = message._client
+    me = await bot.get_me()
+    whato = await message.chat.get_member(me.id)
+    if whato.status=="administrator" and whato.can_delete_messages==True:
+        return await message.delete()
+
+
+@Delevents.on_message(filters.new_chat_members)
+async def greet(client,message):
+    bot = message._client
+    getme = await bot.get_me()
+    for new_mem in message.new_chat_members:
+       if new_mem.id==getme.id:
+            return await message.reply_text('**Thanks for Adding me Here !\n\nMake me Admin with right of Deleting Messages.\n\n@Futurecodes**')
+
+
+@Delevents.on_message(filters.private & filters.command('start'))
+async def pmfilter(client, message):
+    me = await message._client.get_me()
+    await message.reply_text("I can Delete Service Messages of Your Group,"
+                             " Just Add me There as an Admin\n\n**Join @FutureCodes",
+                             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⚜️ ADD Me ⚜️",url=f"https://t.me/{me.id}?startgroup=true")]]),
+                             quote=True)
+
+@Delevents.on_message(filters.private & ~filters.command('start'))
+async def okla(client,message):
+    await message.delete()
+
+
+@Delevents.on_message(filters.group & filters.command('start'))
+async def groupo(client,message):
+    await message.reply_text('Heya, I am Alive',quote=True)
+
+
+Delevents.run()
+hm = Delevents.get_me()
+logging.print(f"{hm.username} Deployed Successfully !!")
+logging.print("Join @FutureCodes...")
