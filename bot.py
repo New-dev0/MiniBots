@@ -23,13 +23,14 @@ async def main(client , message):
         return await message.delete()
 
 
-@Delevents.on_message(filters.new_chat_members)
+@Delevents.on_message(filters.new_chat_members & filters.group)
 async def greet(client,message):
     bot = message._client
     getme = await bot.get_me()
-    for new_mem in message.new_chat_members:
-       if new_mem.id==getme.id:
-            return await message.reply_text('**Thanks for Adding me Here !\n\nMake me Admin with right of Deleting Messages.\n\n@Futurecodes**')
+    if message.new_chat_members:
+        for i in message.new_chat_members:
+            if i.id==getme.id:
+                return await message.reply_text('**Thanks for Adding me Here !\n\nMake me Admin with right of Deleting Messages.\n\n@Futurecodes**')
 
 
 @Delevents.on_message(filters.private & filters.command('start'))
@@ -37,7 +38,7 @@ async def pmfilter(client, message):
     me = await message._client.get_me()
     await message.reply_text("I can Delete Service Messages of Your Group,"
                              " Just Add me There as an Admin\n\n**Join @FutureCodes",
-                             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⚜️ ADD Me ⚜️",url=f"https://t.me/{me.id}?startgroup=true")]]),
+                             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔶 ADD Me 🔶",url=f"https://t.me/{me.username}?startgroup=true")]]),
                              quote=True)
 
 @Delevents.on_message(filters.private & ~filters.command('start'))
@@ -47,7 +48,7 @@ async def okla(client,message):
 
 @Delevents.on_message(filters.group & filters.command('start'))
 async def groupo(client,message):
-    await message.reply_text('Heya, I am Alive',quote=True)
+    await message.reply_text('Hey, I am Alive',quote=True)
 
 
 Delevents.run()
