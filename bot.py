@@ -14,13 +14,18 @@ Delevents = Client('Delete Events Bot',
                    bot_token=var.BOT_TOKEN
                    )
 
-@Delevents.on_message(filters.service & filters.group)
+@Delevents.on_message(filters.group)
 async def main(client , message):
     bot = message._client
     me = await bot.get_me()
-    whato = await message.chat.get_member(me.id)
-    if whato.status=="administrator" and whato.can_delete_messages==True:
-        return await message.delete()
+    try:
+        if message.service==True:
+            whato = await message.chat.get_member(me.id)
+            if whato.status=="administrator" and whato.can_delete_messages==True:
+                return await message.delete()
+    except Exception as e:
+        print(str(e) + message.chat.id)
+    
 
 
 @Delevents.on_message(filters.new_chat_members & filters.group)
@@ -53,5 +58,5 @@ async def groupo(client,message):
 
 Delevents.run()
 hm = Delevents.get_me()
-logging.print(f"{hm.username} Deployed Successfully !!")
-logging.print("Join @FutureCodes...")
+print(f"{hm.username} Deployed Successfully !!")
+print("Join @FutureCodes...")
