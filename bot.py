@@ -27,7 +27,6 @@ async def main(client , message):
         print(str(e) + message.chat.id)
     
 
-
 @Delevents.on_message(filters.new_chat_members & filters.group)
 async def greet(client,message):
     bot = message._client
@@ -54,7 +53,6 @@ async def okla(client,message):
 @Delevents.on_message(filters.group & filters.command('start'))
 async def groupo(client,message):
     await message.reply_text('Hey, I am Alive',quote=True)
-
 
 Delevents.run()
 hm = Delevents.get_me()
