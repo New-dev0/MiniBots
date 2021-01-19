@@ -1,9 +1,9 @@
 {
     "name": "Delete Events Bot",
     "description": "Bot to Clean Service Messages in Your Group",
-    "repository": "https://github.com/New-dev0/Minibots/blob/delete-events",
+    "repository": "https://github.com/New-dev0/Minibots/tree/Delete-Events",
     "logo": "",
-    "keywords": ["telegram", "Anonymous Sender", "Hide sender", "telegram bot"],
+    "keywords": ["telegram","service messages cleaner","pyrogram","delete events","bot", "telegram bot"],
     "env": {
         "API_ID": {
             "description": "Your API_ID Take it from https://my.telegram.org/apps ",
