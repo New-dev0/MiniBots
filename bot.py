@@ -6,7 +6,7 @@ from pyrogram.types import (
     )
 
 import logging
-logging.basicConfig(level=logging.WARNING)
+logging.basicConfig(level=logging.INFO)
 
 Delevents = Client('Delete Events Bot',
                    api_id=var.API_ID,
