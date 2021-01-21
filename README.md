@@ -1,6 +1,6 @@
 # Delete Events Bot
 
-A **Telegram Bot** to Delete Service Messages in Your Group. Just add it in YOUR Group as ADMIN with right of Deleting Messages !!<br><br>
+A **Telegram Bot** to Delete Service Messages in Your Group/Channel. Just add it in YOUR Group/Channel as ADMIN with right of Deleting Messages !!<br><br>
 
 ## Deploying To Heroku
 * <a href="https://heroku.com/deploy"><img src="https://www.herokucdn.com/deploy/button.svg" width="180"></a><br><br>
