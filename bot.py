@@ -16,7 +16,7 @@ Delevents = Client('Delete Events Bot',
 
 @Delevents.on_message(filters.service)
 async def main(client , message):
-                return await message.delete()
+    return await message.delete()
 
     
 
