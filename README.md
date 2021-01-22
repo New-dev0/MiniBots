@@ -1,6 +1,11 @@
-# Delete Events Bot
+# Telescopy Bot
 
-A **Telegram Bot** to Delete Service Messages in Your Group/Channel. Just add it in YOUR Group/Channel as ADMIN with right of Deleting Messages !!<br><br>
+A **Telegram Bot** to Convert square Video or Gif to circle..\n.Made with Help of Pyrogram.
+
+<p align="center">
+<img src="https://telegra.ph/file/cc9d3fee6dc89c26fb241.jpg"><br>
+    <i>@TelescopyGoBot</i>
+</p>
 
 ## Deploying To Heroku
 * <a href="https://heroku.com/deploy"><img src="https://www.herokucdn.com/deploy/button.svg" width="180"></a><br><br>
