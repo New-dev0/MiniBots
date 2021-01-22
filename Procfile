@@ -1,1 +1,1 @@
-Delete-Events: python3 bot.py
+Telescopy: python3 main.py
