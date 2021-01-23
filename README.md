@@ -1,10 +1,10 @@
 # Telescopy Bot
 
-A **Telegram Bot** to Convert square Video or Gif to circle..<br>Made with Help of **Pyrogram**.
+A **Telegram Bot** using **Pyrogram Framework** to Convert square Video or Gif to circle. You can find it on Telegram as [@TelescopyGoBot](https://t.me/TelescopyGoBot).
 
 <p align="center">
-<img src="https://telegra.ph/file/cc9d3fee6dc89c26fb241.jpg",width="200"><br>
-    <a href="https://t.me/TelescopyGoBot"><b>@TelescopyGoBot</a>
+<img src="https://telegra.ph/file/cc9d3fee6dc89c26fb241.jpg"><br>
+    <a href="https://t.me/TelescopyGoBot"><b><i>@TelescopyGoBot</i></a>
 </p><hr>
 
 ## Deploying To Heroku
@@ -18,3 +18,6 @@ A **Telegram Bot** to Convert square Video or Gif to circle..<br>Made with Help 
 
 ## Thanks to 
 * **[Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/Pyrogram/Pyrogram)**
+
+## Inspired by
+* **[Kylmakalle - Telescopy](https://github.com/Kylmakalle/Telescopy)**
