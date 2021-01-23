@@ -1,9 +1,9 @@
 {
-    "name": "Delete Events Bot",
-    "description": "Bot to Clean Service Messages in Your Group",
-    "repository": "https://github.com/New-dev0/Minibots/tree/Delete-Events",
+    "name": "Telescopy Bot",
+    "description": "Bot to Convert Square Videos/Gif to Circle..",
+    "repository": "https://github.com/New-dev0/MiniBots/tree/Telescopy-Bot",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlA1UbjifRbDrwKNSg31u9-vQ15dbYOuwz-g&usqp=CAU",
-    "keywords": ["telegram","service messages cleaner","pyrogram","delete events","bot", "telegram bot"],
+    "keywords": ["telegram","pyrogram","telescopy","bot", "telegram bot"],
     "env": {
         "API_ID": {
             "description": "Your API_ID Take it from https://my.telegram.org/apps ",
