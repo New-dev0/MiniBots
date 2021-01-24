@@ -2,8 +2,8 @@
 
 ## List Of Bots
 
-Delete Events Bots - https://github.com/New-Dev0/Minibots/tree/Delete-Events
-Telescopy-Bot - https://github.com/New-dev0/MiniBots/tree/Telescopy-Bot
+Delete Events Bots - https://github.com/New-Dev0/Minibots/tree/Delete-Events </ br>
+Telescopy-Bot - https://github.com/New-dev0/MiniBots/tree/Telescopy-Bot</ br>
 
 Will be Adding Soon 👍
 
