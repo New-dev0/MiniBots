@@ -38,7 +38,7 @@ async def main(client , message):
 
                                       
 
-@Telescopy.on_message(filters.new_chat_members & filters.me & filters.group)
+@Telescopy.on_message(filters.new_chat_members & filters.me)
 async def greet(client,message):
     await message.reply_text('**Thanks for Adding me Here !\n\nI will Convert Square Videos or Gif When they will be send in this Chat**',
                             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="📣 Support Group 📣",url="https://t.me/FutureCodes")]]))
