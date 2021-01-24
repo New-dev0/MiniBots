@@ -8,7 +8,7 @@ from pyrogram.types import (
 import logging
 logging.basicConfig(level=logging.INFO)
 
-Delevents = Client('Delete Events Bot',
+Delevents = Client("Delete Events Bot",
                    api_id=var.API_ID,
                    api_hash=var.API_HASH,
                    bot_token=var.BOT_TOKEN
@@ -22,7 +22,7 @@ async def main(client , message):
 
 @Delevents.on_message(filters.new_chat_members & filters.me)
 async def greet(client,message):
-    await message.reply_text('**Thanks for Adding me Here !\n\nMake me Admin with right of Deleting Messages.\n\n@Futurecodes**')
+    await message.reply_text("**Thanks for Adding me Here !\n\nMake me Admin with right of Deleting Messages.\n\n@Futurecodes**")
 
 
 @Delevents.on_message(filters.private & filters.command('start'))
@@ -35,12 +35,12 @@ async def pmfilter(client, message):
 
 @Delevents.on_message(filters.private & ~filters.command('start'))
 async def okla(client,message):
-    await message.delete()
+    await message.reply_text("Hey Dude Add Me to Group I am Delete Events Bot !! Nothing to See Here ...")
 
 
 @Delevents.on_message(filters.group & filters.command('start'))
 async def groupo(client,message):
-    await message.reply_text('Hey, I am Alive',quote=True)
+    await message.reply_text("Hey, I am Alive",quote=True)
 
 Delevents.run()
 hm = Delevents.get_me()
