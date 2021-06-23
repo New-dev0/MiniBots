@@ -1,0 +1,24 @@
+{
+    "name": "Auto Kick Bot",
+    "description": "Bot to Kick People Joining  Group.",
+    "repository": "https://github.com/New-dev0/Minibots/tree/autokick",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlA1UbjifRbDrwKNSg31u9-vQ15dbYOuwz-g&usqp=CAU",
+    "keywords": ["telegram","pyrogram","auto kick","bot", "telegram bot"],
+    "env": {
+        "API_ID": {
+            "description": "Your API_ID Take it from https://my.telegram.org/apps ",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API_HASH Take it from https://my.telegram.org/apps",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Bot token Create one bot and Enter TOKEN Here. ",
+            "value": ""
+        }
+    },
+    "buildpacks": [{
+        "url": "heroku/python"
+    }]
+}

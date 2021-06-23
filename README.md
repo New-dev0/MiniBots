@@ -1,11 +1,15 @@
-# MiniBots
+# Auto Kick Bot
 
-## List Of Bots
+A **Telegram Bot** to Kick New Join Members in Your Group/Channel. Just add it in YOUR Group/Channel as ADMIN with right of Deleting Messages !!<br><br>
 
-Delete Events Bots - [Click-Here](https://github.com/New-Dev0/Minibots/tree/Delete-Events)
+## Deploying To Heroku
+* <a href="https://heroku.com/deploy"><img src="https://www.herokucdn.com/deploy/button.svg" width="180"></a><br><br>
 
-Telescopy-Bot - [Click-Here](https://github.com/New-dev0/MiniBots/tree/Telescopy-Bot)
+## Required Vars
+    API_ID = Take it from My.Telegram.org
+    API_HASH = Take it from My.Telegram.org
+    BOT_TOKEN = Take it from @BotFather
+<br>
 
-More bots Coming Soon 👍
-
-**If You Like the Bots Dont Hesitate to Share and Star the Repo**
+## Thanks to 
+* **[Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/Pyrogram/Pyrogram)**
