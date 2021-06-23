@@ -6,6 +6,8 @@ Delete Events Bots - [Click-Here](https://github.com/New-Dev0/Minibots/tree/Dele
 
 Telescopy-Bot - [Click-Here](https://github.com/New-dev0/MiniBots/tree/Telescopy-Bot)
 
+AutoKick/Joinkick-Bot - [Click-Here](https://github.com/New-dev0/MiniBots/tree/autokick)
+
 More bots Coming Soon 👍
 
 **If You Like the Bots Dont Hesitate to Share and Star the Repo**
